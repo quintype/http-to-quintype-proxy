@@ -13,7 +13,7 @@ In order to run as an upstart service, please run the following scripts as root,
 ```bash
 curl -L https://github.com/quintype/http-to-quintype-proxy/raw/master/build/linux-amd64/http-to-quintype-proxy > /usr/local/bin/http-to-quintype-proxy
 chmod +x /usr/local/bin/http-to-quintype-proxy
-cat > /etc/init/http-to-quintype-proxy <<EOF
+cat > /etc/init/http-to-quintype-proxy.conf <<EOF
 description "Proxy Requests to Upsteam Quintype Server"
 
 respawn
