@@ -25,5 +25,5 @@ stop on runlevel [06]
 exec /usr/local/bin/http-to-quintype-proxy https://madrid.quintype.io/ 127.0.0.1:8000
 EOF
 initctl reload-configuration
-service http-to-quintype-proxy start
+initctl start http-to-quintype-proxy
 ```
