@@ -22,10 +22,7 @@ respawn limit 15 5
 start on runlevel [2345]
 stop on runlevel [06]
 
-setuid nobody
-setgid nobody
-
-exec /usr/local/bin/http-to-quintype-proxy https://path/to/quintype/server/ 127.0.0.1:8000
+exec /usr/local/bin/http-to-quintype-proxy https://madrid.quintype.io/ 127.0.0.1:8000
 EOF
 initctl reload-configuration
 service http-to-quintype-proxy start
